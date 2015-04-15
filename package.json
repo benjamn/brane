@@ -1,0 +1,32 @@
+{
+  "name": "brane",
+  "author": "Ben Newman <bn@cs.stanford.edu>",
+  "version": "0.0.0",
+  "description": "Arbitrary object graph transformation without wasteful full-graph traversals",
+  "keywords": [
+    "arbitrary",
+    "object",
+    "graph",
+    "traversal",
+    "transformation",
+    "indexing",
+    "abstract",
+    "syntax",
+    "trees",
+    "circular",
+    "cyclic"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "homepage": "https://github.com/benjamn/brane",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/benjamn/brane.git"
+  },
+  "bugs": {
+    "url": "https://github.com/benjamn/brane/issues"
+  },
+  "license": "MIT"
+}
