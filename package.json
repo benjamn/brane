@@ -28,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/benjamn/brane/issues"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "mocha": "~2.2.4"
+  }
 }
