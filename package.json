@@ -21,7 +21,7 @@
     "tsc": "tsc",
     "rollup": "rollup -c",
     "build": "npm run clean && npm run tsc && npm run rollup",
-    "mocha": "scripts/test.sh",
+    "mocha": "scripts/test.sh lib/tests.js",
     "prepublish": "npm run build",
     "test": "npm run build && npm run mocha"
   },
@@ -31,8 +31,11 @@
   "devDependencies": {
     "@types/mocha": "^7.0.2",
     "@types/node": "^13.13.4",
+    "esm": "3.2.25",
+    "mocha": "7.1.2",
     "rimraf": "3.0.2",
     "rollup": "2.7.3",
+    "source-map-support": "0.5.19",
     "typescript": "3.8.3"
   }
 }
