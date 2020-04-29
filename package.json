@@ -1,6 +1,6 @@
 {
   "name": "brane",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Ben Newman <ben@eloper.dev>",
   "description": "Efficient inter-Worker messaging with fantastic TypeScript support",
   "license": "MIT",
