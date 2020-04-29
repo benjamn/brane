@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./lib",
+    "lib": ["dom", "es2015"],
+    "target": "es2015",
+    "module": "es2015",
+    "importHelpers": true,
+    "declaration": true,
+    "sourceMap": true,
+    "types": ["node", "mocha"],
+    "strict": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true
+  }
+}

@@ -1,35 +1,38 @@
 {
   "name": "brane",
-  "author": "Ben Newman <bn@cs.stanford.edu>",
-  "version": "0.0.2",
-  "description": "Arbitrary object graph transformation without wasteful full-graph traversals",
-  "keywords": [
-    "arbitrary",
-    "object",
-    "graph",
-    "traversal",
-    "transformation",
-    "indexing",
-    "abstract",
-    "syntax",
-    "trees",
-    "circular",
-    "cyclic"
-  ],
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha --reporter spec"
-  },
+  "version": "0.1.0",
+  "author": "Ben Newman <ben@eloper.dev>",
+  "description": "Efficient inter-Worker messaging with fantastic TypeScript support",
+  "license": "MIT",
+  "main": "lib/brane.cjs.js",
+  "module": "lib/brane.js",
+  "types": "lib/brane.d.ts",
+  "keywords": [],
   "homepage": "https://github.com/benjamn/brane",
   "repository": {
     "type": "git",
-    "url": "git://github.com/benjamn/brane.git"
+    "url": "git+https://github.com/benjamn/brane.git"
   },
   "bugs": {
     "url": "https://github.com/benjamn/brane/issues"
   },
-  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf lib",
+    "tsc": "tsc",
+    "rollup": "rollup -c",
+    "build": "npm run clean && npm run tsc && npm run rollup",
+    "mocha": "scripts/test.sh",
+    "prepublish": "npm run build",
+    "test": "npm run build && npm run mocha"
+  },
   "dependencies": {
-    "mocha": "~2.2.4"
+    "tslib": "^1.11.1"
+  },
+  "devDependencies": {
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^13.13.4",
+    "rimraf": "3.0.2",
+    "rollup": "2.7.3",
+    "typescript": "3.8.3"
   }
 }
